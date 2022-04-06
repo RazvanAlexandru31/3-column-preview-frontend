@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+--bright-orange: hsl(31, 77%, 52%);
+--dark-cyan: hsl(184, 100%, 22%);
+--very-dark-cyan: hsl(179, 100%, 13%);
+--transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lexend Deca", sans-serif;
+}
+
+h2 {
+    font-family: "Big Shoulders Display", sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+p {
+    font-size: 15px;
+    color: var(--transparent-white-paragraphs);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.btn {
+    background-color: var(--very-light-gray-background-headings-buttons);
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.box-orange .btn {
+    color: var(--bright-orange);
+}
+
+.box-cyan .btn {
+    color: var(--dark-cyan);
+}
+
+.box-dark-cyan .btn {
+    color: var(--very-dark-cyan);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--very-light-gray-background-headings-buttons);
+}
+
+.box-orange {
+    background-color: var(--bright-orange);
+    color: var(--very-light-gray-background-headings-buttons);
+    border-radius: 10px 10px 0 0;
+}
+
+.box-cyan {
+    background-color: var(--dark-cyan);
+    color: var(--very-light-gray-background-headings-buttons);
+}
+
+.box-dark-cyan {
+    background-color: var(--very-dark-cyan);
+    color: var(--very-light-gray-background-headings-buttons);
+    border-radius: 0 0 10px 10px;
+}
+
+.card {
+    padding: 30px;
+}
+
+.container {
+    padding: 40px;
+}
+
+svg {
+    margin-bottom: 30px;
+}
+
+@media (min-width :992px) {
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: auto;
+        max-width: 900px;
+    }
+
+    .box-orange {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .box-dark-cyan {
+        border-radius: 0 10px 10px 0;
+    }
+
+    p {
+        margin-bottom: 50px;
+    }
+
+    .card {
+        padding: 50px;
+    }
+
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
